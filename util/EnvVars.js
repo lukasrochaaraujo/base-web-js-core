@@ -1,0 +1,5 @@
+EnvVars = {
+    App: { },
+    Routes: { },
+    Workers: { }
+};
