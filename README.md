@@ -15,7 +15,9 @@ www/
 |   |--http/
 |   |   |--HttpRequest.js
 |   |   |--HttpRouter.js
-|   |--BasicStorage.js
+|   |--storage/
+|   |   |--BasicStorage.js
+|   |   |--DbStorage.js
 |   |--EnvVars.js
 |--view/
 |   |--component/
