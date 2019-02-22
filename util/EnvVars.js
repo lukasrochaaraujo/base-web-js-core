@@ -1,4 +1,4 @@
-EnvVars = {
+var EnvVars = {
     App: { },
     Routes: { },
     Workers: { }
