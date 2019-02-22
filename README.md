@@ -24,4 +24,6 @@ www/
 |   |   |--BaseComponent.js
 |   |--BaseView.js
 |--index.js
+|--index.html
+|--index.css
 ```
