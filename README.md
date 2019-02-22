@@ -5,6 +5,7 @@
 www/
 |--controller/
 |   |--BaseController.js
+|--lib/
 |--model/
 |   |--BaseModel.js
 |--repository/
