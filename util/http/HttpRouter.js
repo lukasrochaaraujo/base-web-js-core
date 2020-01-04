@@ -1,25 +1,15 @@
 class HttpRouter {
-    constructor(route) {
-        this._route = this._cleanRoute(route);
-        this._controller = undefined;
+    constructor(initialRoute, routerHandler) {
+        this.init();
+        this._routerHandler = routerHandler;
+        location.hash = initialRoute;
     }
 
     init() {
         window.addEventListener('hashchange', this._changeRoute.bind(this), false);
     }
 
-    getControllerInstance() {
-        return this._controller;
-    }
-
     _changeRoute() {
-        this._route = this._cleanRoute(route);
-        switch(this._route) {
-            
-        }
-    }
-
-    _cleanRoute(route) {
-        return hash.replace("#", "");
+        this._routerHandler(location.hash.replace('#', ''));
     }
 }

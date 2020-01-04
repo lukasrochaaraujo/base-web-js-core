@@ -16,8 +16,4 @@ class BaseController {
     stop() {
         this._service.abortRequests();
     }
-
-    navigate(route) {
-        location.hash = route;
-    }
 }
